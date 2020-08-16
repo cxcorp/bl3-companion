@@ -7,6 +7,7 @@ import HighlightedText from './HighlightedText'
 import styles from './WeaponList.module.css'
 
 const externalIcon = (
+  /* From FontAwesome, licensed under CC BY 4.0. See https://fontawesome.com/license/free for details. */
   <svg
     aria-hidden="true"
     focusable="false"
