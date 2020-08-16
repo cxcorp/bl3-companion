@@ -1,0 +1,109 @@
+.App {
+  background-color: #282c34;
+  min-height: 100vh;
+  font-size: calc(10px + 1vmin);
+  color: white;
+  padding-bottom: 3rem;
+}
+
+.AppContainer {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .AppContainer {
+    width: 75%;
+    max-width: 750px;
+    padding: 0;
+  }
+}
+
+.SearchBar {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .SearchBar {
+    margin-bottom: 3rem;
+  }
+}
+
+.AppHeading {
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.HeadingTitle {
+  margin: 0 0 1rem 0;
+}
+
+.HeadingSubtitle {
+  margin: 0 0 2rem 0;
+}
+
+.RankLegendList {
+  list-style: none;
+  padding: 0;
+}
+
+.RankLegendItem {
+  margin: 0;
+  font-size: calc(8px + 0.75vmin);
+  line-height: 1.25;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.RankLegendItem:not(:last-of-type) {
+  margin-bottom: 0.75rem;
+}
+
+.RankLegendText {
+  padding-left: 0.75em;
+}
+
+.RankLegendTier {
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--tier-bg-color);
+  font-size: calc(8px + 0.6vmin);
+  font-weight: bold;
+  color: var(--tier-color);
+  border: 1px solid var(--tier-color);
+}
+
+.RankLegendTier--S {
+  --tier-color: #ffee08;
+  --tier-bg-color: #322805;
+}
+
+.RankLegendTier--A {
+  --tier-color: #f73209;
+  --tier-bg-color: #330801;
+}
+
+.RankLegendTier--B {
+  --tier-color: #b336ec;
+  --tier-bg-color: #260033;
+}
+
+.RankLegendTier--C {
+  --tier-color: #4da9f9;
+  --tier-bg-color: #0a1f34;
+}
+
+.RankLegendTier--D {
+  --tier-color: #26fcb6;
+  --tier-bg-color: #0c3225;
+}
+
+.RankLegendTier--E {
+  --tier-color: #effde3;
+  --tier-bg-color: #31332e;
+}

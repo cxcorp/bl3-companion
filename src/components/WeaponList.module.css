@@ -1,0 +1,97 @@
+.Highlight {
+  font-weight: 500;
+  text-decoration: underline;
+  font-style: normal;
+}
+
+.WeaponsList {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.WeaponListItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.WeaponListItem:not(:last-of-type) {
+  margin-bottom: 3px;
+}
+
+.WeaponListItem--S {
+  --tier-color: #ffee08;
+  --tier-bg-color: #322805;
+}
+
+.WeaponListItem--A {
+  --tier-color: #f73209;
+  --tier-bg-color: #330801;
+}
+
+.WeaponListItem--B {
+  --tier-color: #b336ec;
+  --tier-bg-color: #260033;
+}
+
+.WeaponListItem--C {
+  --tier-color: #4da9f9;
+  --tier-bg-color: #0a1f34;
+}
+
+.WeaponListItem--D {
+  --tier-color: #26fcb6;
+  --tier-bg-color: #0c3225;
+}
+
+.WeaponListItem--E {
+  --tier-color: #effde3;
+  --tier-bg-color: #31332e;
+}
+
+.WeaponListItemTier {
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--tier-bg-color);
+  font-weight: bold;
+  color: var(--tier-color);
+  border: 1px solid var(--tier-color);
+}
+
+.WeaponListItemText {
+  padding-left: 1rem;
+  color: var(--tier-color);
+}
+
+.WeaponListItemLink {
+  color: inherit;
+  text-decoration: none;
+  /* increase click zone */
+  padding: 0.5em 0;
+}
+
+.WeaponListItemLink:hover {
+  text-decoration: underline;
+}
+
+.WeaponListItemWiki {
+  margin-left: auto;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.Line {
+  flex: 1 1 auto;
+  margin: 0 2rem 0 2rem;
+  height: 1px;
+  background: rgba(200, 200, 200, 0.1);
+}
+
+.ExternalIcon {
+  height: 10px;
+}
