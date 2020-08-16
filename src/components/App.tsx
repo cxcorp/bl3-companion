@@ -66,7 +66,7 @@ const RankLegend: FC<{ className?: string }> = ({ className }) => {
 const Heading = ({ className }: { className?: string }) => {
   return (
     <header className={cx(className, styles.Heading)}>
-      <h1 className={styles.HeadingTitle}>Legendary Search - BL3 Companion</h1>
+      <h1 className={styles.HeadingTitle}>Legendary Search - Borderlands 3 Companion</h1>
       <p className={styles.HeadingSubtitle}>
         Data based on{' '}
         <a
